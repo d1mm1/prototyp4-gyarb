@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headlines - The Lorem Ipsum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+  <div id="navbarEL">
+    <a href="index.html" id="logoEL">Cybersäkerhet</a> <!--EL står för else då alla andra sidor förutom index är
+           else/EL -->
+    <div id="navbar-rightEL">
+      <a href="index.html">Startsida</a>
+      <a href="anonymitet.html">Anonymitet</a>
+      <a href="wifi.html">Wi-fi</a>
+      <a href="fiskning.html">fiskning</a>
+      <a href="extra.html">Extra</a>
+      <a href="skydd.html">Virus</a>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+
+
+
+
+    const disclaimerAccepted = localStorage.getItem('disclaimerAccepted');
+
+
+
+
+    if (!disclaimerAccepted) {
+      // Om disclaimern inte har accepterats, redirect till disclaimer-sidan
+      window.location.href = 'disclaimer.html';
+    }
+
+
+
+
+    // Flytta goToCyberSecurityLaw utanför window.onload
+    function goToCyberSecurityLaw() {
+      // Använd en absolut länk
+      window.location.href =
+        "https://www.msb.se/sv/amnesomraden/informationssakerhet-cybersakerhet-och-sakra-kommunikationer/nis-direktivet/lag-forordning-och-foreskrifter/";
+
+
+
+
+    }
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <div id="ikon2">
+      <img src="WIFIsvart.png" alt="WIFI_bild">
+    </div>
+    <section id="wifi">
+      <h1>WI-FI</h1>
+      <h1>-</h1>
+      <p>I följande avnsitt kommer du att lära dig:</p>
+      <p>Hur man blir anonym på internet</p>
+      <p>Hur man kollar om en VPN är säker</p>
+      <p>Hur man ändrar sin MAC-adress</p>
+      <p>Hur man skapar ett skript som ändrar din MAC-adress</p>
+      <h1 id="syskravtext">Phishing och Wi-Fi?</h1>
+    </section>
+
+
+    <style>
+      .icon-text-block img,
+      .plus {
+        width: 80px;
+        /* Set both icons and the plus sign to the same width */
+        height: auto;
+        /* Maintain the aspect ratio */
+        margin-bottom: 10px;
+        /* Space between the icon and the text */
+      }
+
+      /* Update the .plus class to remove margin-top and set consistent sizing with the icons */
+      .plus {
+        display: block;
+        /* Make it a block to allow margin auto to center */
+        width: 80px;
+        /* Same width as the icons */
+        height: 80px;
+        /* Same height as the icons */
+        margin: 0 20px;
+        /* Margin to the sides */
+      }
+
+      /* Adjust the flex properties on .icon-text-block to align items to the center */
+      .icon-text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* Centers the text below the icons */
+      }
+
+      /* Ensure the icons and text are centered within each block */
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        /* Allows the blocks to grow and fill the container evenly */
+        margin-top: 80px;
+      }
+
+      /* Adjust the .phis_WiFi section to handle the layout */
+      .phis_WiFi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        /* Adjust spacing between items */
+      }
+
+      .block img {
+        width: 220px;
+        height: 200px;
+      }
+
+      .form-container {
+        text-align: center;
+        /* Center aligns the content */
+        margin: 0 auto;
+        /* Centers the container */
+        max-width: 800px;
+        /* Maximum width of the container, adjust as needed */
+        margin-top: 150px;
+      }
+
+      .form-image {
+        max-width: 100%;
+        /* Makes image responsive */
+        height: auto;
+        /* Maintains aspect ratio */
+        margin-bottom: 20px;
+        /* Space between the image and the text */
+      }
+
+      .form-text {
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+        color: #333;
+        /* Adjust the text color as needed */
+        padding: 0 15px;
+        /* Padding on the sides */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .form-text {
+          font-size: 0.9rem;
+          /* Smaller font size for smaller screens */
+        }
+      }
+    </style>
+
+    <section class="phis_WiFi">
+      <div class="block">
+        <img src="WIFIKONV2.webp" alt="Wifi Symbol">
+        <div class="block-text">
+          <p>Här kommer du att lära dig hur hackare genomför Wi-Fi-phishing (wifiphisher) och hur du kan bli hackad
+            genom att vara uppkopplat till ett vanligt offentligt Wi-Fi. </p>
+        </div>
+      </div>
+
+      <img class="plus" src="plus_symbol.webp" alt="Plus Symbol">
+      <div class="block">
+        <img src="phishing.png" alt="Phishing Symbol">
+        <div class="block-text">
+          <p>Du kommer samt att lära dig hur du kan skydda dig från sådana attacker och vilka enheter som är uppkopplade
+            till ett Wi-Fi. </p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="form-container">
+      <img src="form_WiFi.png" alt="Formulär Bild" class="form-image">
+      <div class="form-text">
+        <p>På följande fråga finns inget rätt svar, därför hade cirka 4 av 5 elever fel på denna fråga. </p>
+        <p> Hackare kan både skapa ett WiFi med ett lås (WPA) och ett utan lås. </p>
+        <p>Om du går in på ett farligt WiFi ( skapat av en hackare ) kan du enkelt bli hackad!</p>
+
+      </div>
+    </div>
+
+
+
+
+
+    </section>
+    <section class="videor">
+      <div class="video-section">
+        <div class="video-text">
+          <h1>Introduktion</h1>
+          <h1>Password cracking, bruteforcing och trådlösa attacker:</h1>
+          <h1>-</h1>
+          <p>I denna videon kommer ni att få en introduktion av trådlösa attacker.</p>
+          <p>Vi kommer att genomföra en attack där vi bruteforcar in oss i vårt egna Wi-Fi genom att koppla bort en
+            användare.</p>
+          <p>Då användaren kopplas bort försöker enheten att gå tillbaka in till Wi-Fi:et. Detta kallas för en
+            handshake.</p>
+          <p>Skriptet som vi använder analyserar handshaken och försöker olika kombinationer för att hitta rätt
+            lösenord.</p>
+          <h4>VARNING: Videon är för utbildningsändamål, vi rekommenderar ständigt att ni följer alla lagar och genomför
+            attackerna på era egna enheter!</h4>
+        </div>
+        <div class="video-container">
+          <iframe width="560" height="315"
+            src="https://drive.google.com/file/d/1kxrggaOu03dgv7ZW4ajqo-ChoeM2qdJl/preview" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="video-section reversed">
+        <div class="video-container">
+          <iframe width="560" height="315"
+            src="https://drive.google.com/file/d/1DcW528RHJiFeGHmlvDefBOZp8BBaT5hx/preview" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+        <div class="video-text">
+          <h1>Vad en hackare kan göra om ni är inne på samma Wi-Fi:</h1>
+          <h2>-</h2>
+          <p>I följande tutorial får du reda på vad en hackare kan göra om ni är inne på samma nätverk.</p>
+          <p>Vi kommer att genomföra en attack som får tillgång till ett windows system med remote control.</p>
+          <p>Detta gör vi med hjälp av bruteforcing och nmap.</p>
+          <h4>Var uppmärksam på vilka Wi-Fi:s du går in på och undvik offentliga Wi-Fi:s! </h4>
+
+
+        </div>
+      </div>
+
+      <div class="video-section">
+        <div class="video-text">
+          <h1>Wi-Fi phishing:</h1>
+          <h1>-</h1>
+          <p>I följande tutorial får du reda på hur du skapar ett phishing Wi-Fi.</p>
+          <p>Cirka 4 av 5 elever, visste inte att detta fanns (vi var själva chockade när vi fick reda på att detta
+            finns)!</p>
+          <p>Detta skriptet kopierar ett Wi-Fi, tar bort tillgången till det och skapar en kopia, som tvingar användaren
+            att gå in!</p>
+          <p>När man går in på nätverket så kommer en phishing sida upp, du kan själv välja hur phishing sidan kan se ut
+          </p>
+        </div>
+        <div class="video-container">
+          <iframe width="560" height="315"
+            src="https://drive.google.com/file/d/1YuZF2XBukMk8ugPv1nAqiLtasybCUvn0/preview" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+  </main>
+  <footer>
+    <p> Pauliskolan | TE21A | Dimitri Vodianoi & Olivier Zyc</p>
+  </footer>
+  </div>
+
+
+  <script>
+    $(function () {
+      $('a[href*="#section05"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+      });
+
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+
+
+
+    });
+  </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

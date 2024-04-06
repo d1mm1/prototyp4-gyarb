@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headlines - The Lorem Ipsum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+  <div id="navbarEL">
+    <a href="index.html" id="logoEL">Cybersäkerhet</a> <!--EL står för else då alla andra sidor förutom index är
+           else/EL -->
+    <div id="navbar-rightEL">
+      <a href="index.html">Startsida</a>
+      <a href="anonymitet.html">Anonymitet</a>
+      <a href="wifi.html">Wi-fi</a>
+      <a href="fiskning.html">fiskning</a>
+      <a href="extra.html">Extra</a>
+      <a href="skydd.html">Virus</a>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+
+
+
+
+    const disclaimerAccepted = localStorage.getItem('disclaimerAccepted');
+
+
+
+
+    if (!disclaimerAccepted) {
+      // Om disclaimern inte har accepterats, redirect till disclaimer-sidan
+      window.location.href = 'disclaimer.html';
+    }
+
+
+
+
+    // Flytta goToCyberSecurityLaw utanför window.onload
+    function goToCyberSecurityLaw() {
+      // Använd en absolut länk
+      window.location.href =
+        "https://www.msb.se/sv/amnesomraden/informationssakerhet-cybersakerhet-och-sakra-kommunikationer/nis-direktivet/lag-forordning-och-foreskrifter/";
+
+
+
+
+    }
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <div id="ikon">
+      <img src="VPN_icon.png" alt="VPN_bild">
+    </div>
+    <section id="anonymitet">
+      <h1>ANONYMITET</h1>
+      <h1>-</h1>
+      <p>I följande avnsitt kommer du att lära dig:</p>
+      <p>Hur man blir anonym på internet</p>
+      <p>Hur man kollar om en VPN är säker</p>
+      <p>Hur man ändrar sin MAC-adress</p>
+      <p>Hur man skapar ett skript som ändrar din MAC-adress</p>
+      <h1 id="syskravtext">Systemkrav</h1>
+    </section>
+
+    <div class="syskravTERMINAL"> <!--det här är terminalen-->
+
+      <div class="terminal_toolbar">
+        <div class="butt">
+          <button class="btn btn-color"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <p class="user">DimOli@admin: ~</p>
+        <div class="add_tab">+</div>
+      </div>
+      <div class="terminal_body">
+        <div class="terminal_prompt">
+          <span class="terminal_user">DimOli@admin:</span>
+          <span class="terminal_location">~</span>
+          <span class="terminal_bling">$</span>
+          <span class="terminal_cursor"></span>
+        </div>
+        <div class="terminal_output">
+          <pre class="output_text">Systemkraven:</pre>
+          <pre class="output_text">Kali Linux Maskin</pre>
+          <pre class="output_text">Crontab</pre>
+          <pre class="output_text">Tor</pre>
+          <pre class="output_text">Macchanger</pre>
+
+
+        </div>
+        <div class="terminal_input">
+          <input placeholder="Läs systemkraven ovanför..." class="input_text" type="text" />
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .syskravTERMINAL {
+        width: 570px;
+        height: 400px;
+        background: #1e1e1e;
+        font-family: Menlo, Consolas, monospace;
+        font-size: 14px;
+        color: #e6e6e6;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+      }
+
+      /*det här är styles för terminalen */
+
+      .terminal_toolbar {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        padding: 0 8px;
+        box-sizing: border-box;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #212121;
+        justify-content: space-between;
+      }
+
+      .butt {
+        display: flex;
+        align-items: center;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-right: 5px;
+        font-size: 8px;
+        height: 12px;
+        width: 12px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 100%;
+        background: linear-gradient(#7d7871 0%, #595953 100%);
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 1px 0px #41403a, 0px 1px 1px 0px #474642;
+      }
+
+      .btn-color {
+        background: #ee411a;
+      }
+
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      .btn:focus {
+        outline: none;
+      }
+
+      .butt--exit {
+        background: linear-gradient(#f37458 0%, #de4c12 100%);
+      }
+
+      .add_tab {
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 0 6px;
+        border-radius: 4px 4px 0 0;
+        border-bottom: none;
+        cursor: pointer;
+      }
+
+      .user {
+        color: #d5d0ce;
+        margin-left: 6px;
+        font-size: 14px;
+        line-height: 15px;
+      }
+
+      .terminal_body {
+        background: rgba(0, 0, 0, 0.6);
+        height: calc(100% - 30px);
+        padding-top: 2px;
+        margin-top: -1px;
+        font-size: 12px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .terminal_prompt {
+        display: flex;
+        align-items: center;
+        padding: 4px;
+      }
+
+      .terminal_prompt span {
+        margin-left: 4px;
+      }
+
+      .terminal_user {
+        color: #1eff8e;
+      }
+
+      .terminal_location {
+        color: #4878c0;
+      }
+
+      .terminal_bling {
+        color: #dddddd;
+      }
+
+      .terminal_cursor {
+        display: block;
+        height: 14px;
+        width: 5px;
+        margin-left: 10px;
+        animation: curbl 1200ms linear infinite;
+      }
+
+      .terminal_output {
+        padding: 4px;
+        flex-grow: 1;
+        overflow-y: auto;
+      }
+
+      .output_text {
+        margin: 0;
+      }
+
+      .terminal_input {
+        padding: 4px;
+      }
+
+      .input_text {
+        width: 100%;
+        padding: 6px;
+        background: transparent;
+        border: none;
+        color: #e6e6e6;
+        caret-color: #1eff8e;
+      }
+
+      @keyframes curbl {
+        0% {
+          background: #ffffff;
+        }
+
+        49% {
+          background: #ffffff;
+        }
+
+        60% {
+          background: transparent;
+        }
+
+        99% {
+          background: transparent;
+        }
+
+        100% {
+          background: #ffffff;
+        }
+      }
+    </style>
+
+    <section class="videor">
+      <div class="video-section">
+        <div class="video-text">
+          <h1>Tor, VPNs och Proxychains:</h1>
+          <h1>-</h1>
+          <p>Enligt vårt formulär använder cirka 33% av Pauliskolans elever VPN.</p>
+          <p>Visste ni dock att några VPNs inte är 100% säkra?</p>
+          <p>I denna videon får ni en inblick av hur man får en gratis VPN och hur man kollar om en VPN är säker.</p>
+          <p>Samt får ni en inblick på vad MAC-adress är och varför det är viktigt för att vara anonym</p>
+        </div>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ynavLQglRQk?si=5VTpKvPZHVA8ht7D"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="video-section reversed">
+        <div class="video-container">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fg4M_xo5BEo?si=iTYhmJyVFOhkGZEW"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+        <div class="video-text">
+          <h1>Skript som ändrar din MAC-adress:</h1>
+          <h2>-</h2>
+          <p>I följande tutorial får du reda på hur du aldrig glömmer att ändra din MAC-adress.</p>
+          <p>Du kommer samt skapa ett litet skript med crontab</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <p> Pauliskolan | TE21A | Dimitri Vodianoi & Olivier Zyc</p>
+  </footer>
+  </div>
+
+
+  <script>
+    $(function () {
+      $('a[href*="#section05"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+      });
+
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+
+
+
+    });
+  </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

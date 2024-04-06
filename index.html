@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headlines - The Lorem Ipsum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+  <div class="black-background">
+    <div id="navbar">
+      <a href="index.html" id="logo">Cybersäkerhet</a>
+      <div id="navbar-right">
+        <a href="index.html">Startsida</a>
+        <a href="anonymitet.html">Anonymitet</a>
+        <a href="wifi.html">Wi-fi</a>
+        <a href="fiskning.html">fiskning</a>
+        <a href="extra.html">Extra</a>
+        <a href="skydd.html">Virus</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Block 1 - FORMULÄR -->
+    <div class="block dark" id="formular-block">
+      <div class="icon"><img src="formular_icon.png" alt=""></div>
+      <h2 class="title">Formulär</h2>
+      <p class="description">Här ser du resultaten på vårt formulär, där vi frågade Pauliskolans elever om deras
+        kunskaper i cybersäkerhet.</p>
+
+    </div>
+    <!-- Block 2 - SKYDD -->
+    <div class="block light">
+      <div class="icon"><img src="skydd.png" alt=""></div>
+      <h2 class="title">Virus</h2>
+      <p class="description">Här får du reda på hur du skyddar dig på internet.</p>
+
+    </div>
+    <!-- Block 3 - PHISHING -->
+    <div class="block light">
+      <div class="icon">
+        <img src="phishing.png" alt="">
+
+      </div>
+      <h2 class="title">Phishing</h2>
+      <p class="description">Lär dig om phishing attacker och hur du skyddar dig från dem.</p>
+
+    </div>
+    <!-- Block 4 - EXTRA -->
+    <div class="block dark">
+      <div class="icon"><img src="extra_icon.png" alt=""> </div>
+      <h2 class="title">Extra</h2>
+      <p class="description">Gott och blandat om cybersäkerhet b.la bra länkar och flipper zero</p>
+
+    </div>
+    <!-- Block 5 - WI-FI -->
+    <div class="block dark">
+      <div class="icon"><img src="WIFI.png" alt=""></div>
+      <h2 class="title">Wi-Fi</h2>
+      <p class="description">Lär dig om Wi-Fi- och wireless attacker.</p>
+
+    </div>
+
+    <!-- Block 6 - ANONYMITET -->
+
+    <div class="block light">
+      <div class="icon">
+        <img src="VPN_icon.png" alt="">
+      </div>
+      <!-- ANONYMITET block -->
+      <h2>ANONYMITET</h2>
+      <p>Bli helt anonym på internet.</p>
+
+    </div>
+    <style>
+      .tutorial-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+      }
+
+      .tutorial-text {
+        width: 100%;
+        padding: 20px;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+
+      }
+
+      .tutorial-text p {
+        line-height: 2;
+        margin-right: 50px;
+        font-size: 18px;
+      }
+
+      .tutorial-text h3 {
+        font-weight: normal;
+        font-family: 'Kanit', sans-serif;
+      }
+
+      .tutorial-video {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .tutorial-video iframe {
+        width: 900px;
+        height: 400px;
+        /* Adjust height as needed */
+      }
+
+      @media (max-width: 768px) {
+        .tutorial-container {
+          flex-direction: column;
+        }
+
+        .tutorial-text,
+        .tutorial-video {
+          width: 80%;
+        }
+
+        .tutorial-video iframe {
+          height: 200px;
+          /* Adjust for smaller devices */
+        }
+      }
+    </style>
+    </head>
+
+    <body>
+
+      <div class="omoss-text">
+        <h2>VÅRT UPPDRAG</h2>
+        <h2>-</h2>
+        <ul>
+
+          <p>MacOS 10.15 eller senare En 64-bitars Intel-baserad Mac eller En 64-bitars Windows-dator</p>
+          <p>Minst 4 GB RAM</p>
+          <p>Rekommenderas minst 20-30 GB ledigt lagringsutrymme</p>
+        </ul>
+      </div>
+
+      <div class="tutorial-container">
+        <div class="tutorial-text">
+          <h2>DINA FÖRSTA STEG</h2>
+          <h2>-</h2>
+          <h3>Systemkrav</h3>
+          <ul>
+
+            <p>MacOS 10.15 eller senare En 64-bitars Intel-baserad Mac eller En 64-bitars Windows-dator</p>
+            <p>Minst 4 GB RAM</p>
+            <p>Rekommenderas minst 20-30 GB ledigt lagringsutrymme</p>
+          </ul>
+        </div>
+        <div class="tutorial-video">
+          <!-- Replace with your actual video embed link -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VoUJFUGFloA?si=wO2PT3rrvmjjzNSB"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </body>
+
+    <script>
+
+
+
+
+      const disclaimerAccepted = localStorage.getItem('disclaimerAccepted');
+
+
+
+
+      if (!disclaimerAccepted) {
+        // Om disclaimern inte har accepterats, redirect till disclaimer-sidan
+        window.location.href = 'disclaimer.html';
+      }
+
+
+
+
+      // Flytta goToCyberSecurityLaw utanför window.onload
+      function goToCyberSecurityLaw() {
+        // Använd en absolut länk
+        window.location.href =
+          "https://www.msb.se/sv/amnesomraden/informationssakerhet-cybersakerhet-och-sakra-kommunikationer/nis-direktivet/lag-forordning-och-foreskrifter/";
+
+
+
+
+      }
+
+
+    </script>
+
+
+    <script>
+      $(function () {
+        $('a[href*="#section05"]').on('click', function (e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+        });
+
+
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+
+        function scrollFunction() {
+          const navbar = document.getElementById("navbar");
+          const logo = document.getElementById("logo");
+
+
+          if (window.scrollY > 100) {
+            navbar.style.padding = "20px 30px";
+            logo.style.fontSize = "40px";
+            logo.style.marginRight = "100px";
+            logo.style.marginLeft = "20px";
+            navbar.classList.add("scrolled");
+            navbar.style.top = "0"; // Adjust the top property
+            navbarRightlinks.css("margin-right", "40px");
+          } else {
+            navbar.style.padding = "80px 10px";
+            logo.style.fontSize = "67px";
+            logo.style.marginLeft = "800px";
+            navbar.classList.remove("scrolled");
+            navbar.style.top = "200px"; // Adjust the top property back to 150px
+            navbarRightlinks.css("margin-right", "40px");
+            //innan scroll
+          }
+        }
+      });
+    </script>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('#slideshow img');
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? 'block' : 'none';
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Trigger the nextSlide function once the DOM content has loaded
+        nextSlide();
+
+        // Attach the click event listener to the slideshow
+        document.getElementById('slideshow').addEventListener('click', nextSlide);
+      });
+
+      document.getElementById('formular-block').addEventListener('click', function () {
+        window.location.href = 'skydd.html';
+      });
+    </script>
+
+    <footer>
+      <p>Dimitri Vodianoi & Olivier Zyc | TE21A | Pauliskolan</p>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
